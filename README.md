@@ -43,6 +43,7 @@ I used BanditPolicy for this reason which is an "aggressive" early stopping poli
 AutoML gives the ability to run multiple experiments and choose the best classification model.
 
 I defined the following config for the AutoML run:
+
 ![automl config](https://github.com/samfrost23/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/assets/99268262/22974abc-1097-49f0-920a-9e22b2b2bf71)
 
 
