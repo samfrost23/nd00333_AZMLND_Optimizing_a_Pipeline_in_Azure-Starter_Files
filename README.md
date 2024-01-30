@@ -2,8 +2,10 @@
 
 ## Overview
 This project is part of the Udacity Azure ML Nanodegree.
-In this project, we build and optimize an Azure ML pipeline using the Python SDK and a provided Scikit-learn model.
-This model is then compared to an Azure AutoML run.
+In this project, I build and optimize an Azure ML pipeline using the Python SDK and a provided Scikit-learn model.
+The Scikit-learn Model is then compared to an Azure AutoML run.
+![overview](https://github.com/samfrost23/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/assets/99268262/a8ce2420-ab28-4965-a1a0-dee0a8073b6c)
+
 
 ## Summary
 In this project we use a UCI Bank Marketing dataset to predict if the client will subscribe to a term deposit with the bank or not.
