@@ -23,9 +23,6 @@ Save best model
 The data was accessed from "https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv" and a Tabular Dataset was created using TabularDatasetFactory
 Data is then cleaned and pre-processed within a clean_data function, the data is split into training and testing in a ratio of 80:20. 
 
-The Early Termination Policy was setup:
-![policy](https://github.com/samfrost23/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/assets/99268262/795ef812-31a6-46cb-9d15-cb79fbd1c09a)
-
 The HyperDriveConfig class was configured with the following parameter sampler:
 ![parametersample](https://github.com/samfrost23/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/assets/99268262/70de5343-8f0c-4a37-a003-fcfc97a57883)
 
@@ -38,7 +35,9 @@ The Accuracy was calculated on the test set for each run, best model was then re
 
 I chose RandomParameterSampling because it supports early termination of low performance runs which helps to reduce computation time and still allows us to to find reasonably good models, this saves us time and cost for computing resources
 
-I used BanditPolicy for this reason which is an "aggressive" early stopping policy. With BanditPolicy it defines an early termination policy based on a slack factor, slack amount and evaluation interval which is specified as 0.1, 1, 5 respectively.
+I used BanditPolicy for this reason which is an "aggressive" early stopping policy. With BanditPolicy it defines an early termination policy based on a slack factor, slack amount and evaluation interval which is specified as 0.1, 1, 5 respectively:
+![policy](https://github.com/samfrost23/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/assets/99268262/795ef812-31a6-46cb-9d15-cb79fbd1c09a)
+
 
 ## AutoML
 AutoML gives the ability to run multiple experiments and choose the best classification model.
